@@ -1,7 +1,3 @@
-body{
-	margin:0;
-	padding:0;
-}
 
 .side{
 	position: absolute;
@@ -27,11 +23,11 @@ body{
 
 
 .gambarhp{
-	position: absolute;
+	position: relative;
 	width: 137px;
 	height: 137px;
 	left: 1092px;
-	top: 391px;
+	top: 50px;
 }
 
 .gambarhp img{
@@ -40,27 +36,27 @@ body{
 }
 
 .gambarpenerimaan{
-	position: absolute;
+	position: relative;
 	width: 565px;
 	height: 0px;
 	left: 500px;
-	top: 200px;
+	top: 144px;
 
 }
 
 .gambarpenerimaan img{
 	z-index: 10;
-	position:absolute;
+	position:relative;
 	width: 29px;
 	height: 29px;
 }
 
 .textpenerimaan{
-	position: absolute;
+	position: relative;
 	width: 99px;
 	height: 22px;
 	left: 550px;
-	top: 200px;
+	top: 144px;
 	font-family: 'Nunito';
 	font-style: normal;
 	font-weight: 700;
@@ -70,18 +66,17 @@ body{
 
 }
 
-
 .gambarrepair{
-	position: absolute;
+	position: relative;
 	width: 29px;
 	height: 29px;
 	left: 500px;
-	top: 368px;
+	top: 329px;
 
 }
 
 .gambarrepair img{
-	position: absolute;
+	position: relative;
 	z-index: 10;
 	width: 29px;
 	height: 29px;
@@ -89,11 +84,11 @@ body{
 }
 
 .textrepair{
-	position: absolute;
+	position: relative;
 	width: 193px;
 	height: 33px;
 	left: 550px;
-	top: 368px;
+	top: 300px;
 	font-family: 'Nunito';
 	font-style: normal;
 	font-weight: 700;
@@ -103,11 +98,11 @@ body{
 }
 
 .keterangantextrepair{
-	position: absolute;
+	position: relative;
 	width: 617px;
 	height: 88px;
 	left: 550px;
-	top: 397px;
+	top: 305px;
 	font-family: 'Nunito';
 	font-style: normal;
 	font-weight: 400;
@@ -117,11 +112,11 @@ body{
 }
 
 .gambarselesai{
-	position: absolute;
+	position: relative;
 	width: 29px;
 	height: 29px;
 	left: 500px;
-	top: 577px;
+	top: 350px;
 
 }
 
@@ -134,11 +129,11 @@ body{
 }
 
 .textselesai{
-	position: absolute;
+	position: relative;
 	width: 54px;
 	height: 22px;
 	left: 550px;
-	top: 577px;
+	top: 325px;
 	font-family: 'Nunito';
 	font-style: normal;
 	font-weight: 700;
@@ -149,11 +144,11 @@ body{
 }
 
 .gambarpembayaran{
-	position: absolute;
+	position: relative;
 	width: 29px;
 	height: 29px;
 	left: 500px;
-	top: 733px;
+	top: 499px;
 
 }
 
@@ -166,11 +161,11 @@ body{
 }
 
 .textpembayaran{
-	position: absolute;
+	position: relative;
 	width: 54px;
 	height: 22px;
 	left: 550px;
-	top: 733px;
+	top: 475px;
 	font-family: 'Nunito';
 	font-style: normal;
 	font-weight: 700;
@@ -181,11 +176,11 @@ body{
 }
 
 .line1 {
-	position: relative;
+	position: absolute;
 	width: 185px;
 	height: 0px;
 	left: 421px;
-	top: 300px;
+	top: 329px;
 	border: 4px solid;
 	background-color: #02668E;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
@@ -200,7 +195,7 @@ body{
 	width: 350px;
 	height: 0px;
 	left: 339px;
-	top: 560px;
+	top: 619px;
 	border: 4px solid;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 	transform: rotate(90deg);
