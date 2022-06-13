@@ -19,7 +19,7 @@
       </div>
 
       <div class="gambarpenerimaan">
-          <img src="penerimaan.png">
+          <img src="images/penerimaan.png">
       </div>
 
       <div class="textpenerimaan">
@@ -27,7 +27,7 @@
       </div>
 
       <div class="gambarrepair">
-        <img src="repair.png">
+        <img src="images/repair.png">
       </div>
 
       <div class="textrepair">
@@ -39,7 +39,7 @@
       </div>
 
       <div class="gambarselesai">
-        <img src="selesai.png">
+        <img src="images/selesai.png">
       </div>
 
       <div class="textselesai">
@@ -47,7 +47,7 @@
       </div>
 
       <div class="gambarpembayaran">
-        <img src="pembayaran.png">
+        <img src="images/pembayaran.png">
       </div>
 
       <div class="textpembayaran">
@@ -61,7 +61,7 @@
       </div>
 
       <div class="gambarhp">
-        <img src="hp.png">
+        <img src="images/hp1.png">
       </div>
 
 
