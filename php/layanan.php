@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title> Serpisan | Layanan</title>
 
     <link rel="stylesheet" href="css/layanancs.css">
@@ -71,13 +71,13 @@
                 <div id="drop_zone">
                     <p>Drop file disini</p>
                     <p>or</p>
-                    <p><button type="button" id="btn_file_pick" class="btn btn-primary"><span class="glyphicon glyphicon-folder-open"></span> Pilih File</button></p>
+                    <p><button type="button" id="btn_file_pick" class="btn btn-primary" style="background-color: #02668e; border-radius:16px;"><span class="glyphicon glyphicon-folder-open"></span> Pilih File</button></p>
                     <p id="file_info"></p>
                     <p><button type="button" id="btn_upload" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-up"></span>  Upload To Server</button></p>
                     <input type="file" id="selectfile">
                     <p id="message_info"></p>
                 </div> 
-                <button id="tombol" button type="button">Lanjutkan</button> 
+                <button id="tombol" button type="button" style="background-color: #02668e; border-radius:16px;">Lanjutkan</button> 
                 <br>
             </form>
         </div>
