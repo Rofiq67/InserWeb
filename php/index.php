@@ -1,5 +1,5 @@
 <?php 
-   include 'navcustomer.php';
+    include 'navcustomer.php';
 ?>
 
 <!doctype html>
@@ -42,7 +42,7 @@
 
                         <h3> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolores middle bla bla bla.</h3> <br>
 
-                        <div class="btn btn-primary" style="background-color: #02668e; border-radius:16px;"> Service Sekarang </div>
+                        <div class="btn btn-primary" style="background-color: #02668e; border-radius:16px;"><a href="layanan.php" style="text-decoration: none; color:white;"> Service Sekarang </a></div>
                     </td>
                     <td></td>
                     <td></td>
