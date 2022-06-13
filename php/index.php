@@ -1,5 +1,5 @@
 <?php 
-    include 'navcustomer.php';
+   include 'navcustomer.php';
 ?>
 
 <!doctype html>
@@ -18,13 +18,14 @@
         <!-- Bootstrap CSS -->
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 
         <title> Serpisan | Home </title>
 
         <style>
 
         
-
         </style>
     </head>
     <body style="font-family: Nunito; background-color: #f9f9f9;"">
