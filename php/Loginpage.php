@@ -1,6 +1,10 @@
 <?php 
     include 'navbar.php';
+    
+    
 ?>
+
+
 
 <!doctype html>
 <html lang="en">
@@ -27,8 +31,20 @@
 
         </style>
     </head>
-    <body style="font-family: Nunito; background-color: #f9f9f9;"">
+    <body style="font-family: Nunito; background-color: #f9f9f9;">
+    
+    <?php
+    if(isset($_GET['alert'])){
+        if($_GET['alert']=="gagal"){
+            echo "<script>alert('Maaf, Email & Password Anda Salah!')</script>";
+        } else if($_GET['alert']=="belum login"){
+            echo"<script>alert('Anda Harus Login Terlebih Dulu!')</script>";
+		}else if($_GET['alert']=="logout"){
+			echo "<script>alert('Anda Telah Logout!')</script>";
+		}
+    }
 
+    ?> 
 
     <div class="container" style="margin-top: 80px;">
         <table width="95%" align="center" cellspacing="20" cellpadding="10">
@@ -40,26 +56,23 @@
                             <h2 class="card-title"> <b>Sign In</b></h2>
                             <p>Lorem ipsum dolor sit, amet adipisicing elit. </p>
 
-                            <form style="margin-top: 32px;" action="index.php" method="POST">
+                            <form style="margin-top: 32px;" action="aksi.php" method="POST">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                    <a href="#" style="text-decoration: none; "><div id="passwordHelp" class="form-text" align="right" >Lupa password?</div></a>
+                                    <input type="password" name="pwd" class="form-control" id="exampleInputPassword1">
+                                    <a href="#" style="text-decoration: none; "><div id="pwdHelp" class="form-text" align="right" >Lupa Password?</div></a>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputSelect" class="from-label"> Status </label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Masuk sebagai </option>
-                                        <option value="1">Customer</option>
-                                        <option value="2">Admin</option>
-                                    </select>
+                                <div class="mb-3" style="text-align:center;">
+                                    <button type="submit" name="masuk" class="btn btn-primary mt-4" style="background-color: #02668e; border-radius:16px; width:110px;"> Sign In </button>
+                                    <br>
+                                    <p style=" opacity:  .6;"> Belum punya akun ? <a href="#" style="font-weight:bold; color:#02668e; text-align:center;
+                                    text-decoration:none;">Sign Up</a></p>
                                 </div>
-                                <button type="submit"  href="index.php" class="btn btn-primary mt-4" style="background-color: #02668e; border-radius:16px; width:110px;"> Sign In </button>
-                            </form>
+                                </form>
 
                             </div>
                         </div> 
@@ -202,3 +215,5 @@
     -->
     </body>
 </html>
+
+
