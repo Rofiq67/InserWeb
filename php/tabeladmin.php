@@ -1,6 +1,10 @@
     <?php 
         include 'navadmin.php';
     ?>
+
+    <?php 
+        include_once 'koneksi.php';
+    ?>
     
     
     <!doctype html>
@@ -32,59 +36,44 @@
                     <thead> 
                         <tr style="text-align:center;">
                             <th>No</th>
-                            <th>Name</th>
-                            <th>Contact</th>
-                            <th>Region</th>
-                            <th>Image</th>
+                            <th>Nama</th>
+                            <th>No Tlp</th>
+                            <th>Jenis Barang</th>
+                            <th>Jenis Layanan</th>
+                            <th>Alamat</th>
+                            <th>Spesifikasi</th>
+                            <th>Gambar</th>
                             <th>Status</th>
                             <th>Action</th>
                         </tr>
                     </thead>
+
+                        <?php 
+                            $no = 1;
+                            $sql = mysqli_query($mysqli, "select * from layanan order by no_lyn desc");
+
+                            while($data=mysqli_fetch_array($sql)){
+                        ?>
+
                     <tbody> 
                         <tr>
-                            <th scope="row" style="text-align: center;">1</th>
-                            <td>Ghozali</td>
-                            <td>0896376276</td>
-                            <td>Kalikondang Demak</td>
-                            <td><img src="images/hp.png" class="rounded mx-auto d-block" alt="..."></td>
+                            <td><?php echo $no; ?></td>
+                            <td><?php echo $data['nama']?></td>
+                            <td><?php echo $data['no_tlp']?></td>
+                            <td><?php echo $data['jns_brg']?></td>
+                            <td><?php echo $data['nama_lyn']?></td>
+                            <td><?php echo $data['alamat']?></td>
+                            <td><?php echo $data['spesifikasi']?></td>
+                            <td><img src="<?php echo $data['gambar']?>" style="width:150px; height:120px;"</td>
                             <td><button type="button" class="btn btn-outline-success" style="text-align: center;" >Success</button></td>
-                            <td><button type="button" class="btn btn-warning"><i class='bx bx-edit-alt'></i></button>
-                                <button type="button" class="btn btn-danger"> <i class='bx bx-trash-alt'></i></button>
-                            </td>
-                        </tr>              
-                        <tr>
-                            <th scope="row" style="text-align: center;">2</th>
-                                <td>Imad</td>
-                                <td>08972737328</td>
-                                <td>Tokyo, Rt02 03</td>
-                                <td><img src="images/hprusak.jpg" class="rounded mx-auto d-block" alt="..."></td>
-                                <td><button type="button" class="btn btn-outline-success" style="text-align: center;" >Success</button></td>
-                                <td><button type="button" class="btn btn-warning"><i class='bx bx-edit-alt'></i></button>
-                                    <button type="button" class="btn btn-danger"> <i class='bx bx-trash-alt'></i></button>
-                                </td>
+                            <td><button type="button" class="btn btn-warning" href="#"><i class='bx bx-edit-alt'></i></button>
+                                <button type="button" class="btn btn-danger" href="#"> <i class='bx bx-trash-alt'></i></button>
                         </tr>
-                        <tr>
-                            <th scope="row" style="text-align: center;">3</th>
-                            <td>Yovi</td>
-                            <td>08376662367</td>
-                            <td>San Francisco</td>
-                            <td><img src="images/hpajor.jpg" class="rounded mx-auto d-block" alt="..."></td>
-                            <td><button type="button" class="btn btn-outline-success" >Success</button></td>
-                            <td><button type="button" class="btn btn-warning"><i class='bx bx-edit-alt'></i></button>
-                                <button type="button" class="btn btn-danger"> <i class='bx bx-trash-alt'></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" style="text-align: center;">3</th>
-                            <td>Rofiq</td>
-                            <td>08376662367</td>
-                            <td>Brangsong</td>
-                            <td><img src="img/4.jpg" class="rounded mx-auto d-block" alt="..."></td>
-                            <td><button type="button" class="btn btn-outline-success" >Success</button></td>
-                            <td><button type="button" class="btn btn-warning"><i class='bx bx-edit-alt'></i></button>
-                                <button type="button" class="btn btn-danger"> <i class='bx bx-trash-alt'></i></button>
-                            </td>
-                        </tr>
+                        
+                        <?php
+                            $no++;
+                            }
+                        ?>
                     </tbody>
                 </table>
 
@@ -123,3 +112,4 @@
         -->
     </body>
     </html>
+
