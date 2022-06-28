@@ -1,4 +1,86 @@
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.accordion-wrapper {
+	position: relative;
+	top: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    width: 1000px;
+    margin:0 auto;
+	left: 125px;
+}
+.accordion {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
 
+
+.accordion:last-child{
+    margin-bottom: 0;
+}
+.accordion-label {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+    background: rgba(4,57,94,.8);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+.accordion-label:hover {
+    background: rgba(4,57,94,1);
+}
+.accordion-label::after {
+    content: "\276F";
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.accordion-content {
+    max-height: 0;
+    padding: 0 16px;
+    color: rgba(4,57,94,1);
+    background: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.accordion-content img{
+	position: relative;
+	width: 200px;
+	height: 180px;
+	left: 770px;
+}
+
+
+.accordion-content p{
+    margin: 0;
+    color: rgba(4,57,94,.7);
+    font-size: 18px;
+}
+input:checked + .accordion-label {
+    background: rgba(4,57,94,1);
+
+}
+input:checked + .accordion-label::after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+}
+input:checked ~ .accordion-content {
+    max-height: 100vh;
+    padding: 16px;
+}
+  
 .side{
 	position: absolute;
 	width: 229px;
@@ -20,188 +102,3 @@
 	color: #02668E;
 	opacity: 4;
 }
-
-
-.gambarhp{
-	position: relative;
-	width: 137px;
-	height: 137px;
-	left: 1092px;
-	top: 50px;
-}
-
-.gambarhp img{
-	width: 137px;
-	height: 137px;
-}
-
-.gambarpenerimaan{
-	position: relative;
-	width: 565px;
-	height: 0px;
-	left: 500px;
-	top: 144px;
-
-}
-
-.gambarpenerimaan img{
-	z-index: 10;
-	position:relative;
-	width: 29px;
-	height: 29px;
-}
-
-.textpenerimaan{
-	position: relative;
-	width: 99px;
-	height: 22px;
-	left: 550px;
-	top: 144px;
-	font-family: 'Nunito';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 22px;
-	color: rgba(0, 0, 0, 0.5);
-
-}
-
-.gambarrepair{
-	position: relative;
-	width: 29px;
-	height: 29px;
-	left: 500px;
-	top: 329px;
-
-}
-
-.gambarrepair img{
-	position: relative;
-	z-index: 10;
-	width: 29px;
-	height: 29px;
-
-}
-
-.textrepair{
-	position: relative;
-	width: 193px;
-	height: 33px;
-	left: 550px;
-	top: 300px;
-	font-family: 'Nunito';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 33px;
-	color: #000000;
-}
-
-.keterangantextrepair{
-	position: relative;
-	width: 617px;
-	height: 88px;
-	left: 550px;
-	top: 305px;
-	font-family: 'Nunito';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 22px;
-	color: #000000af;
-}
-
-.gambarselesai{
-	position: relative;
-	width: 29px;
-	height: 29px;
-	left: 500px;
-	top: 350px;
-
-}
-
-.gambarselesai img{
-	z-index: 10;
-	position: absolute;
-	width: 29px;
-	height: 29px;
-
-}
-
-.textselesai{
-	position: relative;
-	width: 54px;
-	height: 22px;
-	left: 550px;
-	top: 325px;
-	font-family: 'Nunito';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 22px;
-	color: rgba(0, 0, 0, 0.5);
-
-}
-
-.gambarpembayaran{
-	position: relative;
-	width: 29px;
-	height: 29px;
-	left: 500px;
-	top: 499px;
-
-}
-
-.gambarpembayaran img{
-	z-index: 10;
-	position: absolute;
-	width: 29px;
-	height: 29px;
-
-}
-
-.textpembayaran{
-	position: relative;
-	width: 54px;
-	height: 22px;
-	left: 550px;
-	top: 475px;
-	font-family: 'Nunito';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 22px;
-	color: rgba(0, 0, 0, 0.5);
-
-}
-
-.line1 {
-	position: absolute;
-	width: 185px;
-	height: 0px;
-	left: 421px;
-	top: 329px;
-	border: 4px solid;
-	background-color: #02668E;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-	transform: rotate(90deg);
-	border-radius: 32px;
-	color: #02668E;
-
-}
-
-.line2 {
-	position: absolute;
-	width: 350px;
-	height: 0px;
-	left: 339px;
-	top: 619px;
-	border: 4px solid;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-	transform: rotate(90deg);
-	border-radius: 32px;
-	color: #02668E;
-	opacity: 0.5;
-
-}
-  
