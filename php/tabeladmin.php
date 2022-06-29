@@ -28,7 +28,7 @@
                             color:#02668e; width: 160px; border-radius:32px; "><br>
 
                 <div style="text-align: right">
-                    <button type="button" class="btn btn-primary" ><i class='bx bx-plus-medical' ></i></button>
+                    <a button type="button" class="btn btn-primary" href="newlayanan.php"><i class='bx bx-plus-medical' ></i></a>
                 </div>
                 <br>
 
@@ -58,12 +58,12 @@
                     <tbody> 
                         <tr>
                             <td><?php echo $no; ?></td>
-                            <td><?php echo $data['nama']?></td>
-                            <td><?php echo $data['no_tlp']?></td>
-                            <td><?php echo $data['jns_brg']?></td>
-                            <td><?php echo $data['nama_lyn']?></td>
+                            <td><?php echo $data['fnama']?></td>
+                            <td><?php echo $data['contact']?></td>
+                            <td><?php echo $data['jenis']?></td>
+                            <td><?php echo $data['layanan']?></td>
                             <td><?php echo $data['alamat']?></td>
-                            <td><?php echo $data['spesifikasi']?></td>
+                            <td><?php echo $data['spesifikasi']?></td> 
                             <td><img src="<?php echo $data['gambar']?>" style="width:150px; height:120px;"</td>
                             <td><button type="button" class="btn btn-outline-success" style="text-align: center;" >Success</button></td>
                             <td><button type="button" class="btn btn-warning" href="#"><i class='bx bx-edit-alt'></i></button>
